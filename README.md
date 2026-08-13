@@ -1,25 +1,25 @@
-# Driving Repurchase Intent: Olist Regional Logistics & Loyalty Analysis
-This project analyzes the relationship between regional logistics conditions and customer repeat purchasing behavior using the Olist Brazilian e-commerce dataset.
+# 提升回購意願：Olist 區域物流與顧客忠誠度分析
+本專案使用巴西 Olist 電商資料集，分析各地區物流條件與顧客回購行為之間的關係。
 
-The analysis focuses on four potential retention drivers:
+分析聚焦於四項可能影響顧客留存的因素：
 
-- Freight costs
-- Cross-state shipping
-- Shipping duration
-- Review scores
+- 運費成本
+- 跨州配送
+- 配送時間
+- 評論分數
 
-Customer activity was aggregated using `customer_unique_id`, and only successfully delivered orders were included. A six-month maturity filter was applied to ensure customers had sufficient time to make a repeat purchase.
+本專案使用 customer_unique_id 彙整顧客活動，並僅納入成功送達的訂單。此外，分析採用六個月成熟期篩選條件，確保顧客有足夠的時間進行再次購買。
 
-The final analysis compares logistics and retention performance across Brazilian states and identifies markets where freight discounts, delivery improvements, or regional inventory strategies may support customer loyalty.
+最終分析比較巴西各州的物流與顧客留存表現，並辨識可能透過運費折扣、配送改善或區域庫存策略提升顧客忠誠度的市場。
 
-## Tools
+## 使用工具
 
-- **Python, Pandas, SQLAlchemy:** Migrated data from SQLite to PostgreSQL
-- **PostgreSQL:** Data validation, cohort construction, exploratory analysis, and analytical table creation
-- **Power BI:** Interactive dashboards and regional comparison
+- **Python、Pandas、SQLAlchemy：** 將資料從 SQLite 遷移至 PostgreSQL
+- **PostgreSQL：** 資料驗證、客群建立、探索性分析及分析資料表建立
+- **Power BI:** 互動式儀表板與區域比較
 
-## Repository Contents
+## 儲存庫內容
 
-- `sql/` — PostgreSQL validation, exploratory analysis, cohort construction, and analytical data 
-- `presentation/` — Project presentation in PowerPoint and PDF formats
-- `powerbi/` — Power BI dashboard information and online report link
+- `sql/` — PostgreSQL 資料驗證、探索性分析、客群建立及分析資料
+- `presentation/` — PowerPoint 專案簡報
+- `powerbi/` — Power BI 儀表板資訊與線上報表連結
